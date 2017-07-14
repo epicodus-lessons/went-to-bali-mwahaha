@@ -1,9 +1,9 @@
-<h1>Add a product.</h1>
+<h1>Update <%= @product.name %></h1>
 
   <%= form_for @product do |f| %>
     Name: <%= f.text_field :name %>
     Description: <%= f.text_field :description %>
-    Price: <%= f.text_field :price%>
+    Price: <%= f.number_field :price %>
     Image (e.g. chicken.jpg): <%= f.text_field :image %>
   <%= f.submit "Submit" %>
 

@@ -2,14 +2,27 @@
 
 <% if @order_items.any? %>
   <% @order_items.each do |item| %>
-    <p><%= item.product.name %> | <%= link_to "Delete", order_item_path(item), :data => {:confirm => "You sure?", :method => "delete"} %></p>
-    <p> Unit Price: <%= number_to_currency item.product.price %> | Quantity: <%= item.quantity %> | Total Price: <%= number_to_currency (item.product.price * item.quantity) %></p>
+    <div id="order_item<%= item.id %>">
+
+      <p>
+        <%= item.product.name %> | <%= link_to "Delete", order_item_path(item), :data => {:confirm => "You sure?", :method => "delete"}, remote: true %>
+      </p>
+      <p>
+        Unit Price: <%= number_to_currency item.product.price %> | Quantity: <%= item.quantity %> | Subtotal: <%= number_to_currency (item.product.price * item.quantity) %>
+      </p>
+    </div>
   <% end %>
-  <p>Your Total: <%= number_to_currency current_order.total_price %></p>
-  <p><%= link_to "Finalize order", finalize_path %></p>
+  <hr>
+  <h4 id="order-total">
+    Your Order Total: <%= number_to_currency current_order.total_price %>
+  </h4>
+  <p>
+    <%= link_to "Checkout", new_charge_path %>
+  </p>
 <% else %>
   <p>Your shopping cart is empty.</p>
 <% end %>
+
 
 <% if @previous_orders %>
   <h3>Your order history:</h3>
