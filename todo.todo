@@ -6,7 +6,7 @@ Controllers:
 
 Specs:
   ✔ add testing for current models @done (7/14/2017, 9:33:20 AM)
-  ☐ add testing for controllers
+  ✔ add testing for controllers @done (7/14/2017, 4:00:40 PM)
 
 
 AJAX: 
@@ -27,7 +27,7 @@ AJAX:
   ✔ Allow other than whole dollar amounts for admin product creation (for instance, 3.99). @done (7/14/2017, 2:08:40 PM)
   ✔ Add product validations. @done (7/14/2017, 12:25:05 PM)
   ☐ Add Stripe so users can pay when finalizing orders.
-  ☐ Add password validations to ensure a user's password is sufficiently complex.
+  ✔ Add password validations to ensure a user's password is sufficiently complex. @done (7/14/2017, 4:00:47 PM)
   ✔ Add admin links to navbar so admins can easily add, update and delete products. @done (7/14/2017, 12:35:13 PM)
   ✔ Fix the row height for products, which can quickly become uneven. @done (7/14/2017, 12:25:54 PM)
   ☐ Add integration testing for AJAX functionality.

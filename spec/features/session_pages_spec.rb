@@ -5,8 +5,8 @@ describe 'the session path' do
     visit sign_up_path
     fill_in 'user_name', with: 'hi'
     fill_in 'user_email', with: 'hi@'
-    fill_in 'user_password', with: 'hi'
-    fill_in 'user_password_confirmation', with: 'hi'
+    fill_in 'user_password', with: 'hiwellthepassneedstobelong'
+    fill_in 'user_password_confirmation', with: 'hiwellthepassneedstobelong'
     click_button 'Sign up'
     expect(page).to have_current_path root_path
     expect(page).to have_content 'hi@'
@@ -16,8 +16,8 @@ describe 'the session path' do
     visit sign_up_path
     fill_in 'user_name', with: 'hi'
     fill_in 'user_email', with: 'hi@'
-    fill_in 'user_password', with: 'hi'
-    fill_in 'user_password_confirmation', with: 'hi'
+    fill_in 'user_password', with: 'hiwellthepassneedstobelong'
+    fill_in 'user_password_confirmation', with: 'hiwellthepassneedstobelong'
     click_button 'Sign up'
     click_link 'Sign out'
     expect(page).to have_current_path sign_in_path
@@ -28,13 +28,13 @@ describe 'the session path' do
     visit sign_up_path
     fill_in 'user_name', with: 'hi'
     fill_in 'user_email', with: 'hi@'
-    fill_in 'user_password', with: 'hi'
-    fill_in 'user_password_confirmation', with: 'hi'
+    fill_in 'user_password', with: 'hiwellthepassneedstobelong'
+    fill_in 'user_password_confirmation', with: 'hiwellthepassneedstobelong'
     click_button 'Sign up'
     click_link 'Sign out'
     click_link 'Sign in'
     fill_in 'email', with: 'hi@'
-    fill_in 'password', with: 'hi'
+    fill_in 'password', with: 'hiwellthepassneedstobelong'
     click_button 'Sign in'
     expect(page).to have_current_path root_path
     expect(page).to have_content "hi@"
