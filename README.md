@@ -1,24 +1,14 @@
-# README
-
-E-commerce site. Uses `bcrypt` and `materialize`. There's a seed file. Set up your own admin. If you have questions, I'll be in Bali with no email. Ask someone else.
-
-To set up:
-
-* `rake db:setup`
-
-* Sorry, didn't get around to tests. It mostly works. There might be a few bugs.
-
 # _The Most Amazing E-Commerce Site_
 
 #### _This is a Ruby on Rails E-Commerce Application that includes login functionality and a shopping cart.  July 14, 2017_
 
 #### By _**Asia Kane**_
 
-![Homepage](./app/assets/images/homepage-ss.png)
+<!-- ![Homepage](./app/assets/images/homepage-ss.png) -->
 
 ## Description
 
-This application is for both customers (users) and Store managers (admins).  It includes `bcrypt` and `materialize`.
+This is an E-Commerce application is for both customers (users) and store managers (admins).  It includes `bcrypt` and `materialize`.
 
 Users can:
 - Create an account
@@ -28,8 +18,8 @@ Users can:
 - Visit their shopping cart to view total price and/or remove items from their cart
 
 Admins can:
-- Add, edit, or delete products
-- Delete user reviews
+-
+-
 * Note: There is one admin seeded in the database.  An admin can only be added by seeding the database to prevent any user from accessing admin functionality.  To access the admin account, login using:
 
 Email: "admin@admin.com"
@@ -40,7 +30,8 @@ The application structure is outlined below.
 Models:
   - Users
   - Products
-  - Reviews
+  - Orders
+  - Order Items
 
 ## Prerequisites
 
@@ -48,19 +39,17 @@ You will need the following things properly installed on your computer.
 
 * [Git](https://git-scm.com/)
 * [Postgres](https://www.postgresql.org/)
-* [Ruby 2.4.1](https://www.ruby-lang.org/en/downloads/)
-* [Rails 5.1.2](http://rubyonrails.org/)
+* [Ruby](https://www.ruby-lang.org/en/downloads/)
+* [Rails](http://rubyonrails.org/)
 
 ## Installation
 
 In your terminal:
-* `git clone https://github.com/akane0915/higher-grounds-coffee-rails`
-* `cd higher-grounds-coffee-rails`
-* Ensure you are running Ruby 2.4.1 and Rails 5.1.2 versions or later.
+* `git clone https://github.com/akane0915/went-to-bali-mwahaha`
+* `cd went-to-bali-mwahaha`
 * `bundle install`
 * Open another terminal window and type `postgres`.  Leave this window open.
 * In your first terminal window type:
-* `bundle exec rake db:create`
 * `bundle exec rake db:setup`
 * `bundle exec rake db:test:prepare`
 
@@ -74,8 +63,8 @@ Run `bundle exec rails s` for a dev server. Navigate to `http://localhost:3000/`
 
 ## Running tests
 
-This app includes unit and integration testing using RSpec, Factory girl, Shouldamatchers, and Capybara for testing.
-Run `bundle exec rspec` in terminal to test.
+<!-- This app includes unit and integration testing using RSpec, Factory girl, Shouldamatchers, and Capybara for testing.
+Run `bundle exec rspec` in terminal to test. -->
 
 ## Technologies Used
 
@@ -86,7 +75,7 @@ Run `bundle exec rspec` in terminal to test.
 * Bundler
 * Rake Gem
 * Bcrypt Gem
-* Rspec
+<!-- * Rspec -->
 * HTML
 * CSS
 * Bootstrap
@@ -97,7 +86,7 @@ _N/A_
 
 #### Screen Shots
 
-About Section
+<!-- About Section
 ![Aboutpage](./app/assets/images/about-ss.png)
 
 Products Section
@@ -110,7 +99,7 @@ New Product Section (only accessible by admins)
 ![New Product](./app/assets/images/new-product-ss.png)
 
 New Review Section (only accessible by authenticated user)
-![New Review](./app/assets/images/new-review-ss.png)
+![New Review](./app/assets/images/new-review-ss.png) -->
 
 ## Support and contact details
 _I encourage you to update/make suggestions/refactor this code as you see fit. I am always open to improvement! Please contact Asia Kane at asialkane@gmail.com with questions._
