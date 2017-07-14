@@ -16,7 +16,11 @@
 
 @import "materialize";
 
-.product-image{
-    max-height: 200px;
-    height: auto;
+.product-image {
+  max-height: 200px;
+  height: auto;
+}
+
+.edit-btn {
+  max-width: 10px;
 }
