@@ -8,7 +8,7 @@
 
 ## Description
 
-This is an E-Commerce application is for both customers (users) and store managers (admins).  It includes `bcrypt` and `materialize`.
+This is an E-Commerce application is for both customers (users) and store managers (admins).  It uses AJAX to improve user experience and includes `bcrypt` and `materialize`.
 
 Users can:
 - Create an account
@@ -20,6 +20,13 @@ Users can:
 Admins can:
 -
 -
+
+User Stories using AJAX:
+
+- Users can add products to their shopping cart from the index page with AJAX.
+- Users can click on a product and show/hide the product detail using AJAX.
+- Users can remove items from the shopping cart without a page reload.
+
 * Note: There is one admin seeded in the database.  An admin can only be added by seeding the database to prevent any user from accessing admin functionality.  To access the admin account, login using:
 
 Email: "admin@admin.com"
@@ -70,6 +77,7 @@ Run `bundle exec rspec` in terminal to test. -->
 
 * Ruby
 * Rails
+* AJAX
 * ActiveRecord
 * Postgres
 * Bundler
