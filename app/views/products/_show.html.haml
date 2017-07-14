@@ -1,6 +1,7 @@
 #overlay
-  %h2= @product.name
-  %p= number_to_currency @product.price
-  %p= @product.description
+  .info
+    %h4= @product.name
+    %p= number_to_currency @product.price
+    %p= @product.description
   .image
     = image_tag @product.image, class: "product_image"
