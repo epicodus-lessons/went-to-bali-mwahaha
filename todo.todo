@@ -5,6 +5,15 @@ Models:
 Controllers: 
 
 Specs:
-  ☐ add testing for current models
+  ✔ add testing for current models @done (7/14/2017, 9:33:20 AM)
   ☐ add testing for controllers
+
+
+AJAX: 
+
+  ✔ Users can add products to their shopping cart from the index page with AJAX. The item should be added to the shopping cart and the number of items in the cart (shown in the navbar) should update. @done (7/14/2017, 9:34:17 AM)
+
+  ☐ Users can click on a product and show/hide the product detail using AJAX. The product detail should include an image (either Paperclip or an image link), the description, and any other fields you choose to add.
+
+  ✔ Users can remove items from the shopping cart without a page reload. The "delete" link should result in the item being removed from the shopping cart and the total price being updated. @done (7/14/2017, 9:36:58 AM)
 
