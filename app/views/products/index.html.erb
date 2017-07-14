@@ -1,18 +1,17 @@
 <h3>Products</h3>
-<div id="product_show"></div>
 <div class="row">
-  <div class="section">
+  <div class="section fl w-10">
 
     <% @products.each do |product| %>
-      <div class="col s4">
+      <div class="col">
 
         <h4><%= link_to product.name, product_path(product), remote: true %></h4>
-        <p><%= product.description %></p>
         <p><%= number_to_currency product.price %></p>
+        <p><%= product.description %></p>
         
         <%= form_for @order_item, remote: true do |f| %>
           <%= f.hidden_field :product_id, value: product.id %>
-          <%= f.number_field :quantity, placeholder: "Oops, breaks if you don't add input!" %>
+          <%= f.number_field :quantity, placeholder: "Oops, breaks if you don't add input!", class: "w2 num_field" %>
           <span class="waves-effect waves-light btn"><%= f.submit "Add to cart" %></span>
         <% end %>
       
@@ -20,4 +19,5 @@
     <% end %>
 
   </div>
+  <div id="product_show" class="fr w-50 ml6 h3 fixed top-50%"></div>
 </div>
