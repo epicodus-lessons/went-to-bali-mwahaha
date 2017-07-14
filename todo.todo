@@ -29,6 +29,6 @@ AJAX:
   ☐ Add Stripe so users can pay when finalizing orders.
   ☐ Add password validations to ensure a user's password is sufficiently complex.
   ☐ Add admin links to navbar so admins can easily add, update and delete products.
-  ☐ Fix the row height for products, which can quickly become uneven.
+  ✔ Fix the row height for products, which can quickly become uneven. @done (7/14/2017, 12:25:54 PM)
   ☐ Add integration testing for AJAX functionality.
   ☐ Add further AJAX functionality where it might be useful.
