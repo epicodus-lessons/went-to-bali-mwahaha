@@ -20,6 +20,6 @@ class ChargesController < ApplicationController
   private
 
     def amount_to_be_charged
-      @amount = 12000
+      @amount = (current_order.calculate_total * 100).to_i
     end
 end
