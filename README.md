@@ -17,20 +17,13 @@ Users can:
 - Add items to their shopping cart
 - Visit their shopping cart to view total price and/or remove items from their cart
 
-Admins can:
--
--
-
 User Stories using AJAX:
-
 - Users can add products to their shopping cart from the index page with AJAX. The total item count in the nav bar updates.
 - Users can click on a product and show/hide the product detail using AJAX.
 - Users can remove items from the shopping cart without a page reload.  The total order price and item count in the nav bar updates.
 
-* Note: There is one admin seeded in the database.  An admin can only be added by seeding the database to prevent any user from accessing admin functionality.  To access the admin account, login using:
-
-Email: "admin@admin.com"
-Password: "password123456"
+Additional Features:
+- Flash messages included for signing up, signing in and signing out.
 
 The application structure is outlined below.  
 
@@ -39,6 +32,15 @@ Models:
   - Products
   - Orders
   - Order Items
+
+## Database Seeding
+
+The application is seeded using `faker`.
+
+* Note: There is one admin user seeded in the database.  An admin can only be added by seeding the database to prevent any user from accessing admin functionality.  To access the admin account, login using:
+
+Email: "admin@admin.com"
+Password: "password123456"
 
 ## Prerequisites
 
