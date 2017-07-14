@@ -20,9 +20,9 @@ AJAX:
 
 6 Tasks: 
   ☐ Ensure that users can't order a negative number of items.
-  ☐ Add flash messages for signing up, signing in and signing out.
-  ☐ Add product update and delete functionality for admins.
-  ☐ Add admin flash messages for adding, updating and deleting products.
+  ✔ Add flash messages for signing up, signing in and signing out. @done (7/14/2017, 12:05:37 PM)
+  ✔ Add product update and delete functionality for admins. @done (7/14/2017, 11:58:56 AM)
+  ✔ Add admin flash messages for adding, updating and deleting products. (Rails admin does this) @done (7/14/2017, 12:01:20 PM)
   ✔ Add Paperclip for product image upload. @done (7/14/2017, 11:34:52 AM)
   ☐ Allow other than whole dollar amounts for admin product creation (for instance, 3.99).
   ☐ Add product validations.
