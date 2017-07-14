@@ -18,9 +18,7 @@
         null,
         null,
         1,
-        null,
-        null,
-        null,
+        1,
         1,
         1,
         null,
@@ -50,7 +48,7 @@
         null,
         null,
         null,
-        null,
+        3,
         null,
         null,
         null,
@@ -490,7 +488,7 @@
         1,
         null,
         1,
-        0,
+        1,
         null,
         null,
         1,
@@ -517,7 +515,7 @@
         1,
         null,
         1,
-        0,
+        1,
         null,
         null
       ],
@@ -540,8 +538,43 @@
         1,
         null,
         null
+      ],
+      "/Users/niklas/Documents/Web development/Epicodus stuff/went-to-bali-mwahaha/spec/support/factories.rb": [
+        1,
+        null,
+        2,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/niklas/Documents/Web development/Epicodus stuff/went-to-bali-mwahaha/spec/support/factory_girl.rb": [
+        1,
+        1,
+        null
       ]
     },
-    "timestamp": 1500047158
+    "timestamp": 1500048489
   }
 }

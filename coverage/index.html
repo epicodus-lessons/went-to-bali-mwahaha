@@ -14,27 +14,27 @@
       <img src="./assets/0.10.1/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2017-07-14T08:45:58-07:00">2017-07-14T08:45:58-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2017-07-14T09:08:09-07:00">2017-07-14T09:08:09-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="red">71.05%</span></span>
+    (<span class="covered_percent"><span class="red">75.0%</span></span>
      covered at
      <span class="covered_strength">
        <span class="red">
-         0.74
+         0.79
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>37</b> files in total.
-    <b>190</b> relevant lines. 
-    <span class="green"><b>135</b> lines covered</span> and
-    <span class="red"><b>55</b> lines missed </span>
+    <b>39</b> files in total.
+    <b>212</b> relevant lines. 
+    <span class="green"><b>159</b> lines covered</span> and
+    <span class="red"><b>53</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -182,12 +182,12 @@
       
       <tr>
         <td class="strong"><a href="#75e6065a7d7a8080e0f7dab200d3b9c25f710d1a" class="src_link" title="app/models/order.rb">app/models/order.rb</a></td>
-        <td class="red strong">60.0 %</td>
+        <td class="red strong">70.0 %</td>
         <td>16</td>
         <td>10</td>
-        <td>6</td>
-        <td>4</td>
-        <td>0.6</td>
+        <td>7</td>
+        <td>3</td>
+        <td>0.7</td>
       </tr>
       
       <tr>
@@ -212,12 +212,12 @@
       
       <tr>
         <td class="strong"><a href="#908f5cb182c03fdf1bc49433263978c04d7ad07e" class="src_link" title="app/models/user.rb">app/models/user.rb</a></td>
-        <td class="red strong">80.0 %</td>
+        <td class="green strong">100.0 %</td>
         <td>8</td>
         <td>5</td>
-        <td>4</td>
-        <td>1</td>
-        <td>0.8</td>
+        <td>5</td>
+        <td>0</td>
+        <td>1.0</td>
       </tr>
       
       <tr>
@@ -403,19 +403,39 @@
       <tr>
         <td class="strong"><a href="#d48c66095c47daec2a896c6c3b85cef0eb452a65" class="src_link" title="spec/models/user_spec.rb">spec/models/user_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>15</td>
-        <td>6</td>
-        <td>6</td>
+        <td>13</td>
+        <td>7</td>
+        <td>7</td>
         <td>0</td>
-        <td>1.2</td>
+        <td>1.1</td>
       </tr>
       
       <tr>
         <td class="strong"><a href="#4cda050a91a4147df1fe3318b526689215663d8d" class="src_link" title="spec/rails_helper.rb">spec/rails_helper.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>63</td>
-        <td>15</td>
-        <td>15</td>
+        <td>16</td>
+        <td>16</td>
+        <td>0</td>
+        <td>1.1</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#509ae7f7930730a1e5a461c054afbaeda8f9370d" class="src_link" title="spec/support/factories.rb">spec/support/factories.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>28</td>
+        <td>18</td>
+        <td>18</td>
+        <td>0</td>
+        <td>1.1</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#d149602aefda5749fa12bc65d0fed5c02b92914b" class="src_link" title="spec/support/factory_girl.rb">spec/support/factory_girl.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>3</td>
+        <td>2</td>
+        <td>2</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -1688,11 +1708,11 @@
         <div class="source_table" id="75e6065a7d7a8080e0f7dab200d3b9c25f710d1a">
   <div class="header">
     <h3>app/models/order.rb</h3>
-    <h4><span class="red">60.0 %</span> covered</h4>
+    <h4><span class="red">70.0 %</span> covered</h4>
     <div>
       <b>10</b> relevant lines. 
-      <span class="green"><b>6</b> lines covered</span> and
-      <span class="red"><b>4</b> lines missed.</span>
+      <span class="green"><b>7</b> lines covered</span> and
+      <span class="red"><b>3</b> lines missed.</span>
     </div>
   </div>
   
@@ -1741,8 +1761,8 @@
           <code class="ruby">  def calculate_total</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="8">
-          
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
           
           <code class="ruby">    self.total_price = order_items.collect { |item| item.product.price * item.quantity }.sum</code>
         </li>
@@ -1883,11 +1903,11 @@
         <div class="source_table" id="908f5cb182c03fdf1bc49433263978c04d7ad07e">
   <div class="header">
     <h3>app/models/user.rb</h3>
-    <h4><span class="red">80.0 %</span> covered</h4>
+    <h4><span class="green">100.0 %</span> covered</h4>
     <div>
       <b>5</b> relevant lines. 
-      <span class="green"><b>4</b> lines covered</span> and
-      <span class="red"><b>1</b> lines missed.</span>
+      <span class="green"><b>5</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
   
@@ -1924,8 +1944,8 @@
           <code class="ruby">  def previous_orders</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="6">
-          
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
           
           <code class="ruby">    self.orders.where(status: 2).includes(order_items: :product)</code>
         </li>
@@ -3416,8 +3436,8 @@
     <h3>spec/models/user_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>6</b> relevant lines. 
-      <span class="green"><b>6</b> lines covered</span> and
+      <b>7</b> relevant lines. 
+      <span class="green"><b>7</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -3467,49 +3487,37 @@
           <code class="ruby">  describe &#39;#previous_orders&#39; do</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="8">
-          
-          
-          <code class="ruby">  #   before(:each) do</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="9">
-          
-          
-          <code class="ruby">  #   Rails.application.load_seed</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="10">
-          
-          
-          <code class="ruby">  # end</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="11">
+        <li class="covered" data-hits="1" data-linenumber="8">
           <span class="hits">1</span>
           
           <code class="ruby">    it &#39;should return the previous orders&#39; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="12">
+        <li class="covered" data-hits="1" data-linenumber="9">
           <span class="hits">1</span>
           
-          <code class="ruby">      byebug</code>
+          <code class="ruby">      order_item = FactoryGirl.create(:order_item)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="13">
+        <li class="covered" data-hits="1" data-linenumber="10">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(order_item.order.user.previous_orders.first.id).to eq (order_item.order.id)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="14">
+        <li class="never" data-hits="" data-linenumber="12">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="15">
+        <li class="never" data-hits="" data-linenumber="13">
           
           
           <code class="ruby">end</code>
@@ -3525,8 +3533,8 @@
     <h3>spec/rails_helper.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>15</b> relevant lines. 
-      <span class="green"><b>15</b> lines covered</span> and
+      <b>16</b> relevant lines. 
+      <span class="green"><b>16</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -3666,10 +3674,10 @@
           <code class="ruby">#</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="23">
+        <li class="covered" data-hits="3" data-linenumber="23">
+          <span class="hits">3</span>
           
-          
-          <code class="ruby"># Dir[Rails.root.join(&#39;spec/support/**/*.rb&#39;)].each { |f| require f }</code>
+          <code class="ruby">Dir[Rails.root.join(&#39;spec/support/**/*.rb&#39;)].each { |f| require f }</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="24">
@@ -3907,6 +3915,230 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="63">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="509ae7f7930730a1e5a461c054afbaeda8f9370d">
+  <div class="header">
+    <h3>spec/support/factories.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>18</b> relevant lines. 
+      <span class="green"><b>18</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">FactoryGirl.define do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="3">
+          <span class="hits">2</span>
+          
+          <code class="ruby">  sequence :email { |n| &quot;basic#{n}@test&quot; }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  factory :user do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    email</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    name &quot;test_user&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    password  &quot;test_password&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="9">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    password_digest &quot;test_password&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="10">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    admin false</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="13">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  factory :product do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="14">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    name &quot;test_product&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="15">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    description &quot;test_description&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="16">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    price 20</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="18">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="19">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  factory :order do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="20">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    user</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="21">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    status 2</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="22">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="23">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="24">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  factory :order_item do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="25">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    product</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="26">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    order</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="27">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="28">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="d149602aefda5749fa12bc65d0fed5c02b92914b">
+  <div class="header">
+    <h3>spec/support/factory_girl.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>2</b> relevant lines. 
+      <span class="green"><b>2</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">RSpec.configure do |config|</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  config.include FactoryGirl::Syntax::Methods</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
           
           
           <code class="ruby">end</code>
