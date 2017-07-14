@@ -1,5 +1,7 @@
 class Seed
 
+Product.destroy_all
+
   def self.begin
     seed = Seed.new
     seed.generate_products
@@ -12,4 +14,14 @@ class Seed
   end
 end
 
+admin_list = [
+  [ "Admin", "admin@admin.com", "password123456"],
+]
+
+admin_list.each do |name, email, password|
+  User.create( name: name, email: email, password: password, admin: true )
+end
+
 Seed.begin
+p "Created #{Product.count} products"
+p "Created #{User.count} admin"
