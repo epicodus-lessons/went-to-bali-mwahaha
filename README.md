@@ -23,9 +23,9 @@ Admins can:
 
 User Stories using AJAX:
 
-- Users can add products to their shopping cart from the index page with AJAX.
+- Users can add products to their shopping cart from the index page with AJAX. The total item count in the nav bar updates.
 - Users can click on a product and show/hide the product detail using AJAX.
-- Users can remove items from the shopping cart without a page reload.
+- Users can remove items from the shopping cart without a page reload.  The total order price and item count in the nav bar updates.
 
 * Note: There is one admin seeded in the database.  An admin can only be added by seeding the database to prevent any user from accessing admin functionality.  To access the admin account, login using:
 
