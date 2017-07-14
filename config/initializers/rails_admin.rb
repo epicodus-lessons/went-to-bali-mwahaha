@@ -23,6 +23,21 @@ RailsAdmin.config do |config|
   ## To disable Gravatar integration in Navigation Bar set to false
   # config.show_gravatar = true
 
+
+  config.authorize_with do |controller|
+    if User.find_by(id: session[:user_id])
+      if User.find_by(id: session[:user_id]).admin
+      else
+       redirect_to main_app.sign_in_path
+       flash[:error] ="You're not an admin!"
+      end
+    else
+      redirect_to main_app.sign_in_path
+      flash[:error] ="You're not an admin!"
+    end
+  end
+
+
   config.actions do
     dashboard                     # mandatory
     index                         # mandatory
