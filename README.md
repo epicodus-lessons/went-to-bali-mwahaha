@@ -1,14 +1,12 @@
 # _The Most Amazing E-Commerce Site_
 
-#### _This is a Ruby on Rails E-Commerce Application that includes login functionality and a shopping cart.  July 14, 2017_
+#### _This is a Ruby on Rails E-Commerce Application that includes login functionality, a shopping cart, and the Stripe Gem.  July 14, 2017_
 
 #### By _**Asia Kane**_
 
-<!-- ![Homepage](./app/assets/images/homepage-ss.png) -->
-
 ## Description
 
-This is an E-Commerce application is for both customers (users) and store managers (admins).  It uses AJAX to improve user experience and includes `bcrypt` and `materialize`.
+This is an E-Commerce application is for both customers (users) and store managers (admins).  It uses AJAX to improve user experience and includes `stripe`, `bcrypt` and `materialize`.
 
 Users can:
 - Create an account
@@ -23,6 +21,7 @@ User Stories using AJAX:
 - Users can remove items from the shopping cart without a page reload.  The total order price and item count in the nav bar updates.
 
 Additional Features:
+- Includes Stripe Gem so users can pay when finalizing orders.
 - Flash messages included for signing up, signing in and signing out.
 - Only admins can add, update and delete a product.
 - Flash messages for adding, updating and deleting products.
@@ -65,6 +64,11 @@ In your terminal:
 * In your first terminal window type:
 * `bundle exec rake db:setup`
 * `bundle exec rake db:test:prepare`
+
+This application uses stripe.  To configure this, you must create a stripe account and a .env file at the top level of your project directory.  In the file, type (replacing the text in quotes with your own keys):
+
+PUBLISHABLE_KEY="Your publishable key from stripe here"
+SECRET_KEY="Your secret key from stripe here"
 
 ## Development server
 
