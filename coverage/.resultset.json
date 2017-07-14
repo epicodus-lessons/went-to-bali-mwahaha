@@ -2,11 +2,31 @@
   "RSpec": {
     "coverage": {
       "/Users/niklas/Documents/Web development/Epicodus stuff/went-to-bali-mwahaha/spec/helpers/cart_helper_spec.rb": [
-        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/niklas/Documents/Web development/Epicodus stuff/went-to-bali-mwahaha/spec/models/order_item_spec.rb": [
+
+      ],
+      "/Users/niklas/Documents/Web development/Epicodus stuff/went-to-bali-mwahaha/spec/models/order_spec.rb": [
         1,
         null,
         1,
+        2,
+        2,
         null,
+        null,
+        1,
         1,
         1,
         1,
@@ -320,7 +340,7 @@
       "/Users/niklas/Documents/Web development/Epicodus stuff/went-to-bali-mwahaha/app/helpers/cart_helper.rb": [
         1,
         1,
-        1,
+        0,
         null,
         null
       ],
@@ -356,6 +376,9 @@
         0,
         0,
         0,
+        0,
+        null,
+        null,
         null,
         null,
         1,
@@ -371,6 +394,8 @@
         0,
         0,
         0,
+        0,
+        null,
         null,
         null,
         1,
@@ -387,6 +412,10 @@
         1,
         0,
         0,
+        null,
+        null,
+        1,
+        null,
         null,
         null,
         1,
@@ -478,7 +507,7 @@
         1,
         null,
         1,
-        4,
+        3,
         null,
         null,
         1,
@@ -532,7 +561,7 @@
       "/Users/niklas/Documents/Web development/Epicodus stuff/went-to-bali-mwahaha/spec/support/factories.rb": [
         1,
         null,
-        4,
+        3,
         null,
         1,
         1,
@@ -564,26 +593,6 @@
         1,
         null
       ],
-      "/Users/niklas/Documents/Web development/Epicodus stuff/went-to-bali-mwahaha/spec/models/order_item_spec.rb": [
-
-      ],
-      "/Users/niklas/Documents/Web development/Epicodus stuff/went-to-bali-mwahaha/spec/models/order_spec.rb": [
-        1,
-        null,
-        1,
-        2,
-        2,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        null
-      ],
       "/Users/niklas/Documents/Web development/Epicodus stuff/went-to-bali-mwahaha/spec/models/product_spec.rb": [
 
       ],
@@ -603,6 +612,6 @@
         null
       ]
     },
-    "timestamp": 1500049523
+    "timestamp": 1500051353
   }
 }
