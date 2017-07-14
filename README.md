@@ -6,4 +6,20 @@ To set up:
 
 * `rake db:setup`
 
-* Sorry, didn't get around to tests. It mostly works. There might be a few bugs.
+# Additions by niklslong
+
+  * unit and integration testing
+  * rails admin
+  * images for products
+  * authorisation using bcrypt and rails admin
+  * slight product page redesign
+  * uses AJAX for product show, adding and deleting from cart.
+
+# Dependencies
+  
+  * tachyons css framework
+  * rails admin
+  * bcrypt
+  * rspec, factory girl and simplcov for testing
+
+
