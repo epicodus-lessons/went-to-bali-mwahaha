@@ -19,7 +19,7 @@ AJAX:
   ✔ Users can remove items from the shopping cart without a page reload. The "delete" link should result in the item being removed from the shopping cart and the total price being updated. @done (7/14/2017, 9:36:58 AM)
 
 6 Tasks: 
-  ☐ Ensure that users can't order a negative number of items.
+  ✔ Ensure that users can't order a negative number of items. @done (7/14/2017, 1:54:06 PM)
   ✔ Add flash messages for signing up, signing in and signing out. @done (7/14/2017, 12:05:37 PM)
   ✔ Add product update and delete functionality for admins. @done (7/14/2017, 11:58:56 AM)
   ✔ Add admin flash messages for adding, updating and deleting products. (Rails admin does this) @done (7/14/2017, 12:01:20 PM)
