@@ -41,6 +41,11 @@ group :development, :test do
   gem 'byebug', platform: :mri
   gem 'pry'
   gem 'faker'
+  gem 'rspec-rails'
+  gem 'launchy'
+  gem 'shoulda-matchers'
+  gem 'capybara'
+  gem 'simplecov', require: false
 end
 
 group :development do
