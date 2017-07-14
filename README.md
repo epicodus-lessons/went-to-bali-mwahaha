@@ -27,6 +27,7 @@ Additional Features:
 - Only admins can add, update and delete a product.
 - Flash messages for adding, updating and deleting products.
 - Admin link in nav bar so admins can easily add, update and delete products.
+- Allow other than whole dollar amounts for price (e.g. 12.99).
 
 The application structure is outlined below.  
 
