@@ -5,13 +5,17 @@
   <% @products.each do |product| %>
     <div class="col s4">
       <h4><%= product.name %></h4>
-      <p><%= product.description %></p>
-      <p><%= number_to_currency product.price %></p>
-      <%= image_tag(product.image, class: "product-image") %>
+
+      <%= link_to product.name, remote: true, id: "show_details_link", object: product%>
+
+      <div id="product<%= product.id %>-details"><%= render 'product', object: product %></div>
+
       <%= form_for @order_item, remote: true do |f| %>
         <%= f.hidden_field :product_id, value: product.id %>
         <%= f.number_field :quantity, placeholder: "Quantity" %>
+
         <span class="waves-effect waves-light btn"><%= f.submit "Add to cart" %></span>
+
       <% end %>
     </div>
   <% end %>
