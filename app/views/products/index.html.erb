@@ -4,14 +4,10 @@
   <div class="section">
   <% @products.each do |product| %>
     <div class="col s4">
-      <h4><%= product.name %></h4>
 
-      <h1><%= link_to product.name, product_path(product), remote: true %></h1>
+      <h4><%= link_to product.name, product_path(product), remote: true %></h4>
 
-
-      <%= link_to product.name, remote: true, id: "show_details_link", object: product %>
-
-      <div id="product<%= product.id %>-details"></div>
+      <div id="product<%= product.id %>-details" style="display: none;"><%= render 'show', product: product %></div>
 
       <%= form_for @order_item, remote: true do |f| %>
         <%= f.hidden_field :product_id, value: product.id %>
