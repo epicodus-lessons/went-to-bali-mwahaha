@@ -28,6 +28,7 @@ class OrderItemsController < ApplicationController
     @order.save
     respond_to do |f|
       f.html { redirect_to cart_path }
+      f.js
     end
   end
 
