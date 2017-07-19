@@ -1,0 +1,8 @@
+$("#cart-nav").html('<%= link_to "Cart | Total items: #{ @order.order_items.length }", cart_path %>')
+$("#order_item_<%= @item.id %>").remove();
+if (<%= @order.order_items.any? %>) {
+  $("#cart-total").html("Total cost: <%= number_to_currency @order.total_price%>") 
+} else {
+  $("#cart-total").html("Your shopping cart is empty.")
+  $("#finalise").remove();
+}
