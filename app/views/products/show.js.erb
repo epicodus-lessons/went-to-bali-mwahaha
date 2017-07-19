@@ -1,0 +1,11 @@
+jQuery.fn.exists = function(){ return this.length > 0; };
+
+if ($('#product_show').is(':empty')){
+  $('#product_show').html('<%= j render "products/show"%>');
+
+} else if ($('#overlay_<%= j @product.id.to_s %>').exists()) {
+  $('#product_show').html('');
+
+} else {
+  $('#product_show').html('<%= j render "products/show"%>');
+}

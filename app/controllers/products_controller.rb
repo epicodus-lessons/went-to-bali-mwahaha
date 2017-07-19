@@ -6,6 +6,14 @@ class ProductsController < ApplicationController
     @order_item = current_order.order_items.new
   end
 
+  def show
+    @product = Product.find_by(id: params[:id])
+    respond_to do |f|
+      f.html { redirect_to products_path }
+      f.js
+    end
+  end
+
   def new
     @product = Product.new
   end

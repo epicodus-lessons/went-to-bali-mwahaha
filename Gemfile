@@ -33,6 +33,10 @@ gem 'jbuilder', '~> 2.5'
 gem 'bcrypt', '~> 3.1.7'
 gem 'materialize-sass'
 
+gem 'tachyons-rails'
+gem "paperclip", "~> 5.0.0"
+gem 'rails_admin', '~> 1.2'
+gem "haml"
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -41,6 +45,12 @@ group :development, :test do
   gem 'byebug', platform: :mri
   gem 'pry'
   gem 'faker'
+  gem 'rspec-rails'
+  gem 'launchy'
+  gem 'shoulda-matchers'
+  gem 'capybara'
+  gem 'simplecov', require: false
+  gem 'factory_girl_rails'
 end
 
 group :development do
