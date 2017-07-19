@@ -6,7 +6,7 @@ class OrderItemsController < ApplicationController
     if @order.save
       session[:order_id] = @order.id
       respond_to do |f|
-       f.html { redirect_to products_path }
+       f.js
       end
     else
       flash[:error] ="quantity can't be a negative number!"
